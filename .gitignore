@@ -3,4 +3,3 @@ token.*
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfvars
-variables.tf
