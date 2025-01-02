@@ -40,8 +40,8 @@ jobs:
        run: | 
         terraform plan -out=tfplan \
         -var "public_key=${{ secrets.AWS_SSH_PUBLIC_KEY }}" \
-        -var "access_key=${{ secrets.AWS_ACCESS_KEY_ID}}" \
-        -var "secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY}}"
+        -var "aws_access_key_id=${{ secrets.AWS_ACCESS_KEY_ID}}" \
+        -var "aws_secret_access_key=${{ secrets.AWS_SECRET_ACCESS_KEY}}"
       
      - name: Terraform Apply
        working-directory: ./terraform
@@ -49,8 +49,8 @@ jobs:
        run: |
          terraform apply -auto-approve tfplan \
          -var "public_key=${{ secrets.AWS_SSH_PUBLIC_KEY }}" \
-         -var "access_key=${{ secrets.AWS_ACCESS_KEY_ID}}" \
-         -var "secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY}}"
+         -var "aws_access_key_id=${{ secrets.AWS_ACCESS_KEY_ID}}" \
+         -var "aws_secret_access_key=${{ secrets.AWS_SECRET_ACCESS_KEY}}"
 
      - name: Get EC2 Outputs
        id: ec2Outputs

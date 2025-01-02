@@ -69,6 +69,7 @@ After finishing this project you should have a good understanding of launching a
 # Notes 
 
 - Still using the DigitalOcean bucket to hold state file. Simply due to ease and already setup. 
+- Could have simplified the use of aws credentials (i.e. justset in pipeline, no need for explicit vars in TF), but stuck to more explicit due to use of two providers
 
 
 ## Lessons Learned: 
