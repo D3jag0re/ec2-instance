@@ -1,7 +1,5 @@
 # ec2-instance
 
-# dockerized-service 
-
 This is based off the DevOps Roadmap Project [EC2 Instance](https://roadmap.sh/projects/ec2-instance)
 
 Create an EC2 instance on AWS and connect to it using SSH.
