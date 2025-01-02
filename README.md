@@ -37,7 +37,7 @@ If you want to challenge yourself further, try these additional tasks:
 
 - [ ] Set up a custom domain name for your website using Amazon Route 53.
 - [ ] Implement HTTPS using a free SSL/TLS certificate from Let’s Encrypt.
-- [ ] Create a simple CI/CD pipeline using ~~AWS CodePipeline~~ Github Actions to automatically deploy changes to your website. (Note: Using gitHub Actions Instead)
+- [ ] Create a simple CI/CD pipeline using ~~AWS CodePipeline~~ Github Actions to automatically deploy changes to your website. 
 
 
 ## Learning Outcomes
@@ -53,9 +53,22 @@ After completing this project, you will have gained practical experience in:
 
 After finishing this project you should have a good understanding of launching and connecting to EC2 instances, basic knowledge of security groups, and be able to deploy any of the projects from previous tasks using AWS EC2. Future project ideas will be based on these concepts.
 
+## To Run: 
+
+- Setup the following repository secrets:
+    - DO_TOKEN : Digital Ocean access token
+    - DO_SPACES_SECRET_KEY  : Digital Ocean spaces secret key (for Terraform state file)
+    - DO_SPACES_ACCESS_KEY  : Digital Ocean spaces access key (for Terraform state file)
+    - AWS_SSH_PUBLIC_KEY    : Keypair to be used for VM 
+    - AWS_SSH_PRIVATE_KEY   : Keypair to be used for VM
+    - AWS_ACCESS_KEY_ID     : See Note
+    - AWS_SECRET_ACCESS_KEY : See Note
+
+- Note: Setup an IAM User for Terraform to use,  following `least privilege policy`. Once created generate `Access Key ID` and `Secret Access Key`
+
 # Notes 
 
-- Notes
+- Still using the DigitalOcean bucket to hold state file. Simply due to ease and already setup. 
 
 
 ## Lessons Learned: 
