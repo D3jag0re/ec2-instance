@@ -1,5 +1,7 @@
 # Set the variable value in *.tfvars file for local run
-variable "do_token" {}
+variable "do_token" {
+  default = "tmp"
+}
 
 # Set up the variable value in *.tfvars file for local run
 variable "public_key" {}

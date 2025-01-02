@@ -6,7 +6,7 @@ on:
     workflow_dispatch: # Trigger manually from the Actions tab      
 
 jobs:
- build_droplet:
+ build_ec2:
    runs-on: ubuntu-latest
    outputs:
     id: ${{ steps.ec2Outputs.outputs.id}}
