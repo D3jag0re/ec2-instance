@@ -29,19 +29,21 @@ jobs:
         aws-region: us-east-1
        
      - name: Terraform Init
+       working-directory: ./terraform
        run: |
         terraform init \
           -backend-config="access_key=${{ secrets.DO_SPACES_ACCESS_KEY }}" \
           -backend-config="secret_key=${{ secrets.DO_SPACES_SECRET_KEY }}"
     
      - name: Terraform Plan
+       working-directory: ./terraform
        run: terraform plan -out=tfplan
 
      - name: Terraform Apply
+       working-directory: ./terraform
        id: apply
        run: |
          terraform apply -auto-approve tfplan \
-       working-directory: ./terraform
 
      - name: Get EC2 Outputs
        id: ec2Outputs
