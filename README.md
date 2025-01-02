@@ -37,7 +37,7 @@ If you want to challenge yourself further, try these additional tasks:
 
 - [ ] Set up a custom domain name for your website using Amazon Route 53.
 - [ ] Implement HTTPS using a free SSL/TLS certificate from Let’s Encrypt.
-- [ ] Create a simple CI/CD pipeline using AWS CodePipeline to automatically deploy changes to your website. (Note: Using gitHub Actions Instead)
+- [ ] Create a simple CI/CD pipeline using ~~AWS CodePipeline~~ Github Actions to automatically deploy changes to your website. (Note: Using gitHub Actions Instead)
 
 
 ## Learning Outcomes
