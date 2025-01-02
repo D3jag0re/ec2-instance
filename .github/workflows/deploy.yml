@@ -47,7 +47,7 @@ jobs:
        working-directory: ./terraform
        id: apply
        run: |
-         terraform apply -auto-approve tfplan \
+         terraform apply tfplan \
          -var "public_key=${{ secrets.AWS_SSH_PUBLIC_KEY }}" \
          -var "aws_access_key_id=${{ secrets.AWS_ACCESS_KEY_ID}}" \
          -var "aws_secret_access_key=${{ secrets.AWS_SECRET_ACCESS_KEY}}"
