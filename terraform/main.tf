@@ -35,7 +35,7 @@ resource "aws_instance" "web-ec2" {
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = "t2.micro"
   associate_public_ip_address = true
-  key_name                    = aws_key_pair.ec2key
+  key_name                    = aws_key_pair.ec2key.key_name
 
   tags = {
     Name = "web-ec2"
