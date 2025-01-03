@@ -19,6 +19,14 @@ resource "aws_security_group" "allow_ssh" {
     cidr_blocks = ["0.0.0.0/0"] # Allow SSH from any IP (can change for better security)
   }
 
+  # Inbound Rule for HTTP
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"] 
+  }
+
   # Outbound Rule - Allow all traffic out
   egress {
     from_port   = 0
