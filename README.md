@@ -26,16 +26,16 @@ You are required to complete the following tasks:
     - [X] Create a new key pair or use an existing one for SSH access.
     - [X] Assign a public IP address to your instance.
 - [X] Connect to your EC2 instance using SSH and the private key.
-- [ ] Update the system packages and install a web server (e.g., Nginx).
-- [ ] Create a simple HTML file for your static website.
-- [ ] Deploy the static website to your EC2 instance.
-- [ ] Access your website using the public IP address of your EC2 instance.
+- [X] Update the system packages and install a web server (e.g., Nginx).
+- [X] Create a simple HTML file for your static website.
+- [X] Deploy the static website to your EC2 instance.
+- [X] Access your website using the public IP address of your EC2 instance.
 
 ## Stretch Goals
 
 If you want to challenge yourself further, try these additional tasks:
 
-- [ ] Create a simple CI/CD pipeline using ~~AWS CodePipeline~~ Github Actions to automatically deploy changes to your website. 
+- [X] Create a simple CI/CD pipeline using ~~AWS CodePipeline~~ Github Actions to automatically deploy changes to your website. 
 - [ ] Implement HTTPS using a free SSL/TLS certificate from Let’s Encrypt.
 - [ ] Set up a custom domain name for your website using Amazon Route 53.
 
