@@ -84,4 +84,4 @@ jobs:
         # Optional, literal inventory file contents
         inventory: |
           [web]
-          ${{ needs.build_ec2.outputs.public_ip }} ansible_user=root
+          ${{ needs.build_ec2.outputs.public_ip }} ansible_user=ubuntu
