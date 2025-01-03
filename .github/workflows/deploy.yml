@@ -54,7 +54,7 @@ jobs:
        run: |
         EC2_INFO=$(terraform output -json ec2_info)
         echo "id=$(echo $EC2_INFO| jq -r '.id')" >> $GITHUB_OUTPUT
-        echo "public_ip=$(echo $EC2_INFO | jq -r '.ipv4')" >> $GITHUB_OUTPUT
+        echo "public_ip=$(echo $EC2_INFO | jq -r '.public_ip')" >> $GITHUB_OUTPUT
        working-directory: ./terraform  
 
  ansible:
