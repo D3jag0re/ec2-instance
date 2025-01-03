@@ -18,7 +18,7 @@ You are required to complete the following tasks:
 
 - [X] Create an AWS account if you don’t have one already.
 - [X] Familiarize yourself with the AWS Management Console.
-- [ ] Launch an EC2 instance with the following specifications:
+- [X] Launch an EC2 instance with the following specifications:
     - [X] Use Ubuntu Server AMI.
     - [X] Choose a t2.micro instance type (eligible for AWS Free Tier).
     - [X] Use the default VPC and subnet for your region.
