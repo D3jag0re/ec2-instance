@@ -1,0 +1,18 @@
+---
+- name: Download site content 
+  ansible.builtin.get_url:
+    url: https://html5up.net/landed/download
+    dest: /var/www/html/html5up-landed.zip
+
+- name: Extract zip into dir 
+  ansible.builtin.unarchive:
+    src: /var/www/html/html5up-landed.zip
+    dest: /var/www/html
+    remote_src: yes # Indicates the file is already on the remote server
+
+- name: Restart Nginx
+  service:
+    name: nginx
+    state: restarted
+    enabled: yes
+
