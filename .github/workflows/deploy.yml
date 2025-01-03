@@ -85,9 +85,3 @@ jobs:
         inventory: |
           [web]
           ${{ needs.build_ec2.outputs.public_ip }} ansible_user=root
-
-
-    
-
-
-    
