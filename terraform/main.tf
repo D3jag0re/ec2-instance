@@ -73,8 +73,7 @@ resource "aws_instance" "web-ec2" {
 # Capture outputs of droplet
 output "ec2_info" {
   value = {
-    id       = aws_instance.web-ec2.id
-    name     = aws_instance.web-ec2.name
-    ipv4     = aws_instance.web-ec2.public_ip
+    id        = aws_instance.web-ec2.id
+    public_ip = aws_instance.web-ec2.public_ip
   }
 }
