@@ -74,4 +74,4 @@ After finishing this project you should have a good understanding of launching a
 
 ## Lessons Learned: 
 
-- Lessons 
+- TF Plan already factors in variables passed so no need to re-pass in apply. 
