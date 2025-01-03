@@ -10,7 +10,7 @@ jobs:
    runs-on: ubuntu-latest
    outputs:
     id: ${{ steps.ec2Outputs.outputs.id}}
-    public_ip: ${{ steps.ec2Outputs.outputs.ipv4}}
+    public_ip: ${{ steps.ec2Outputs.outputs.public_ip}}
 
    steps:
      - name: Checkout repository
